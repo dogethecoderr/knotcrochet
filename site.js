@@ -49,6 +49,9 @@ document.querySelectorAll('[data-add]').forEach((btn) => {
     cart[id] = (cart[id] || 0) + 1;
     saveCart();
     status.textContent = `Added. You have ${cart[id]} in your cart.`;
+    // A small pulse on the View cart button so the change is noticed. Restart it on every add.
+    const fab = document.querySelector('.cartfab');
+    if (fab) { fab.classList.remove('is-bumped'); void fab.offsetWidth; fab.classList.add('is-bumped'); }
   });
 });
 

@@ -148,6 +148,10 @@ h1 { font-size: clamp(2.75rem, 5.2vw, 5.25rem); }
 .cartfab { position: fixed; z-index: var(--z-sticky); right: var(--space-lg); bottom: var(--space-lg); display: inline-flex; align-items: center; gap: var(--space-xs); min-height: 52px; padding: 0 var(--space-lg); border-radius: var(--radius-pill); background: var(--color-ink); color: var(--color-paper); font-weight: 700; text-decoration: none; white-space: nowrap; box-shadow: var(--shadow-card); transition: translate var(--dur-micro) var(--ease-out); }
 .cartfab:hover { translate: 0 -2px; }
 .cartfab:active { translate: 0 1px; }
+.cartfab.is-bumped { animation: cart-bump 520ms var(--ease-out); }
+.cartfab.is-bumped .count { animation: cart-count 520ms var(--ease-out); }
+@keyframes cart-bump { 35% { scale: 1.1; } }
+@keyframes cart-count { 35% { background: var(--color-white); scale: 1.25; } }
 .cartfab:focus-visible { outline: 3px solid var(--color-accent); outline-offset: 3px; }
 
 .cartpage { padding-block: var(--space-3xl) var(--section-gap-s); }
