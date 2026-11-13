@@ -7,7 +7,7 @@
 @import url("./tokens.css");
 @import url("./base.css");
 
-:root { --nav-h: 88px; }
+:root { --nav-h: 108px; }
 
 /* ---------- shared: chrome, controls, die-cuts ---------- */
 .skip { position: absolute; left: var(--space-md); top: calc(-1 * var(--space-3xl)); z-index: var(--z-toast); padding: var(--space-xs) var(--space-md); background: var(--color-accent-2); color: var(--color-ink); font-weight: 700; }
