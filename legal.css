@@ -1,0 +1,19 @@
+/* Hallmark · shape: Long Document · genre: playful · theme: Sticker (deal 1/3, seed knot-crochet-8th-grader-6502·d49afc8d·2026-11-13·r0) · job: buy · draw: efd44a
+ * hero: Banner · nav: edge-aligned · footer: statement · imagery: none · signature: plain legal text in the shop's own type · sticker: sheet · copy: verbatim
+ * axes: light/display-heavy/chromatic-magenta · posture: full-palette · contrast: pass · fold: pass · v2.0.0 */
+/* Hallmark · pre-emit critique: P3 H4 E4 S3 R5 V3 · weakest: S, policy pages read alike everywhere; each one states only what this shop really does */
+@import url("./tokens.css");
+@import url("./base.css");
+
+.doc { padding-block: var(--space-3xl) var(--section-gap-s); }
+.doc h1 { font-size: var(--text-display-s); }
+.doc .lead { margin-top: var(--space-md); }
+.doc__date { margin-top: var(--space-xs); font-size: var(--text-sm); color: var(--color-muted); }
+.doc__body { max-width: 65ch; margin-top: var(--space-xl); }
+.doc__body h2 { margin-top: var(--space-2xl); font-size: var(--text-xl); }
+.doc__body p, .doc__body ul, .doc__body ol, .doc__body table { margin-top: var(--space-md); }
+.doc__body ul, .doc__body ol { padding-left: var(--space-lg); }
+.doc__body li + li { margin-top: var(--space-xs); }
+.doc__body a { text-decoration-color: var(--color-accent); text-decoration-thickness: 2px; }
+.doc__body table { width: 100%; border-collapse: collapse; font-size: var(--text-sm); text-align: left; }
+.doc__body th, .doc__body td { padding: var(--space-sm) var(--space-sm) var(--space-sm) 0; border-bottom: var(--rule-bar) dashed var(--color-rule); vertical-align: top; }

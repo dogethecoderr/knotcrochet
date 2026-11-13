@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Shop | Knot Crochet Co.</title>
+<meta name="description" content="Handmade crochet from Knot Crochet Co.: handbags, plushies, scrunchies and keychains.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Sacramento&family=Sofia+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="container nav__in">
+    <a class="wordmark" href="index.html">Knot Crochet Co.</a>
+    <nav aria-label="Main">
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#creations">Creations</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#events">Events</a></li>
+        <li><a href="shop.html" aria-current="page">Shop</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <section class="shop" id="shop" aria-labelledby="shop-head">
+    <div class="container">
+      <h1 class="visually-hidden" id="shop-head">Shop</h1>
+      <div class="items">
+        <article class="item" id="handbag">
+          <figure class="diecut diecut--photo" data-slot="handbag" data-alt="Checkered handbag">
+            <img src="images/checkered-handbag.jpg" width="985" height="985" alt="A blue and white checkered crochet handbag hanging by its strap from an outdoor lamp" fetchpriority="high">
+          </figure>
+          <div class="item__head">
+            <h2>Checkered handbag</h2>
+            <p class="item__price">$15</p>
+          </div>
+          <p class="item__line">Both cute and handy. Don’t worry, it’s big enough for your phone!</p>
+          <button class="btn btn--primary" type="button" data-add="handbag" aria-describedby="handbag-status">Add to cart</button>
+          <p class="item__status" id="handbag-status" role="status"></p>
+        </article>
+        <article class="item" id="turtle">
+          <figure class="diecut diecut--photo" data-slot="turtle" data-alt="Turtle">
+            <img src="images/turtle.jpg" width="1200" height="1200" alt="Three crocheted turtle plushies with fluffy cream heads and flippers" fetchpriority="high">
+          </figure>
+          <div class="item__head">
+            <h2>Turtle</h2>
+            <p class="item__price">$8</p>
+          </div>
+          <p class="item__line">An adorable but affordable addition to your stuffed animal-infested bedroom.</p>
+          <button class="btn btn--primary" type="button" data-add="turtle" aria-describedby="turtle-status">Add to cart</button>
+          <p class="item__status" id="turtle-status" role="status"></p>
+        </article>
+        <article class="item" id="scrunchie">
+          <figure class="diecut diecut--photo" data-slot="scrunchie" data-alt="Scrunchie">
+            <img src="images/scrunchie.jpg" width="1200" height="1200" alt="A fluffy white crochet scrunchie worn on a wrist" loading="lazy">
+          </figure>
+          <div class="item__head">
+            <h2>Scrunchie</h2>
+            <p class="item__price">$5</p>
+          </div>
+          <p class="item__line">Velvet-feeling scrunchies that glide through your hair with ease.</p>
+          <button class="btn btn--primary" type="button" data-add="scrunchie" aria-describedby="scrunchie-status">Add to cart</button>
+          <p class="item__status" id="scrunchie-status" role="status"></p>
+        </article>
+        <article class="item" id="cat">
+          <figure class="diecut diecut--photo" data-slot="cat" data-alt="Mini Loaf Cat">
+            <img src="images/mini-loaf-cat.jpg" width="746" height="746" alt="Two small loaf-shaped crochet cats side by side, one white and one brown, with black bead eyes" loading="lazy">
+          </figure>
+          <div class="item__head">
+            <h2>Mini Loaf Cat</h2>
+            <p class="item__price">$8</p>
+          </div>
+          <p class="item__line">A tiny cat in its comfiest loaf pose, ready to sit on your desk or shelf.</p>
+          <button class="btn btn--primary" type="button" data-add="cat" aria-describedby="cat-status">Add to cart</button>
+          <p class="item__status" id="cat-status" role="status"></p>
+        </article>
+        <article class="item" id="strawberry">
+          <figure class="diecut diecut--photo" data-slot="strawberry" data-alt="Red Strawberry Keychain">
+            <img src="images/red-strawberry-keychain.jpg" width="958" height="958" alt="Two red crochet strawberry keychains with green tops and gold clasps, hanging in a bouquet of flowers" loading="lazy">
+          </figure>
+          <div class="item__head">
+            <h2>Red Strawberry Keychain</h2>
+            <p class="item__price">$5</p>
+          </div>
+          <p class="item__line">A sweet little strawberry for your keys or backpack, with a gold clasp.</p>
+          <button class="btn btn--primary" type="button" data-add="strawberry" aria-describedby="strawberry-status">Add to cart</button>
+          <p class="item__status" id="strawberry-status" role="status"></p>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="container">
+    <p class="foot__statement">Knot the end guys… more creations are on the way.</p>
+    <ul class="foot__links">
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+      <li><a href="cookies.html">Cookies</a></li>
+      <li><button type="button" data-consent-open>Cookie settings</button></li>
+      <li><a href="dmca.html">Copyright</a></li>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+      <li><a href="accessibility.html">Accessibility</a></li>
+    </ul>
+    <p class="foot__legal">© 2026 Knot Crochet Co.</p>
+  </div>
+</footer>
+
+<a class="cartfab" href="cart.html"><svg class="bag" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>View cart<span class="count" data-cart-count>0</span></a>
+
+<section class="consent diecut" id="consent" aria-label="Cookie choice" hidden>
+  <p>This site saves your cookie choice and your cart in your browser, and nothing else. Optional extras, like visitor counts, stay off unless you say yes.</p>
+  <div class="consent__actions">
+    <button class="btn" type="button" data-consent-accept>Accept optional</button>
+    <button class="btn" type="button" data-consent-reject>Reject optional</button>
+    <button class="btn" type="button" data-consent-open>Manage preferences</button>
+  </div>
+</section>
+
+<dialog class="prefs diecut" id="prefs" aria-labelledby="prefs-head">
+  <h2 id="prefs-head">Cookie settings</h2>
+  <fieldset>
+    <legend class="visually-hidden">Storage categories</legend>
+    <label><input type="checkbox" checked disabled><span>Essential<small>Remembers this choice and your cart. Always on.</small></span></label>
+    <label><input type="checkbox" id="prefs-analytics"><span>Optional<small>Visitor counts and similar extras. None are in use today.</small></span></label>
+  </fieldset>
+  <div class="consent__actions">
+    <button class="btn" type="button" id="prefs-save">Save choices</button>
+    <button class="btn" type="button" data-consent-reject>Reject optional</button>
+  </div>
+</dialog>
+
+<script type="module" src="site.js"></script>
+</body>
+</html>

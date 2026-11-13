@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Cookie Policy | Knot Crochet Co.</title>
+<meta name="description" content="What this site stores in your browser.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Sacramento&family=Sofia+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="legal.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="container nav__in">
+    <a class="wordmark" href="index.html">Knot Crochet Co.</a>
+    <nav aria-label="Main">
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#creations">Creations</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#events">Events</a></li>
+        <li><a href="shop.html">Shop</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="doc">
+  <div class="container">
+    <h1>Cookie Policy</h1>
+    <p class="lead">What this site stores in your browser.</p>
+    <p class="doc__date">Last updated 13 November 2026.</p>
+    <div class="doc__body">
+<h2>What we store</h2>
+<table>
+<thead><tr><th scope="col">Name</th><th scope="col">Type</th><th scope="col">Purpose</th><th scope="col">Lasts</th></tr></thead>
+<tbody><tr><th scope="row">kc-consent</th><td>Local storage, essential</td><td>Remembers your cookie choice</td><td>Until you clear it</td></tr>
+<tr><th scope="row">kc-cart</th><td>Local storage, essential</td><td>Remembers what is in your cart</td><td>Until you empty it or clear it</td></tr></tbody>
+</table>
+<p>That is the full list. We set no cookies and run no analytics or advertising.</p>
+<h2>Optional extras</h2>
+<p>If we add optional tools, such as visitor counts, they stay switched off until you choose “Accept optional”. Saying no does not change how the site works.</p>
+<h2>Third parties</h2>
+<p>Typefaces load from Google Fonts. Google says the service sets no cookies, but it does receive your IP address.</p>
+<h2>Changing your mind</h2>
+<p>Use the “Cookie settings” button in the footer of any page, at any time. You can also clear this site’s data in your browser settings.</p>
+<p>Questions: <span class="blank">[CONTACT EMAIL]</span></p>
+</div>
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="container">
+    <p class="foot__statement">Knot the end guys… more creations are on the way.</p>
+    <ul class="foot__links">
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+      <li><a href="cookies.html">Cookies</a></li>
+      <li><button type="button" data-consent-open>Cookie settings</button></li>
+      <li><a href="dmca.html">Copyright</a></li>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+      <li><a href="accessibility.html">Accessibility</a></li>
+    </ul>
+    <p class="foot__legal">© 2026 Knot Crochet Co.</p>
+  </div>
+</footer>
+
+<section class="consent diecut" id="consent" aria-label="Cookie choice" hidden>
+  <p>This site saves your cookie choice and your cart in your browser, and nothing else. Optional extras, like visitor counts, stay off unless you say yes.</p>
+  <div class="consent__actions">
+    <button class="btn" type="button" data-consent-accept>Accept optional</button>
+    <button class="btn" type="button" data-consent-reject>Reject optional</button>
+    <button class="btn" type="button" data-consent-open>Manage preferences</button>
+  </div>
+</section>
+
+<dialog class="prefs diecut" id="prefs" aria-labelledby="prefs-head">
+  <h2 id="prefs-head">Cookie settings</h2>
+  <fieldset>
+    <legend class="visually-hidden">Storage categories</legend>
+    <label><input type="checkbox" checked disabled><span>Essential<small>Remembers this choice and your cart. Always on.</small></span></label>
+    <label><input type="checkbox" id="prefs-analytics"><span>Optional<small>Visitor counts and similar extras. None are in use today.</small></span></label>
+  </fieldset>
+  <div class="consent__actions">
+    <button class="btn" type="button" id="prefs-save">Save choices</button>
+    <button class="btn" type="button" data-consent-reject>Reject optional</button>
+  </div>
+</dialog>
+
+<script type="module" src="site.js"></script>
+</body>
+</html>

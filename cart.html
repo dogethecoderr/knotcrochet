@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>Your cart | Knot Crochet Co.</title>
+<meta name="description" content="The items in your Knot Crochet Co. cart.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Sacramento&family=Sofia+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="container nav__in">
+    <a class="wordmark" href="index.html">Knot Crochet Co.</a>
+    <nav aria-label="Main">
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#creations">Creations</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#events">Events</a></li>
+        <li><a href="shop.html">Shop</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="cartpage">
+  <div class="container">
+    <h1>Your cart</h1>
+    <noscript><p class="lead">The cart needs JavaScript switched on.</p></noscript>
+
+    <div class="cartpage__empty" id="cart-empty" hidden>
+      <p class="lead">Knot a thing in here yet.</p>
+      <a class="btn btn--primary" id="cart-empty-link" href="index.html#shop">Back to the shop</a>
+    </div>
+
+    <div class="cartpage__grid" id="cart-full" hidden>
+      <ul class="lines" id="cart-lines" aria-label="Items in your cart"></ul>
+
+      <section class="summary" aria-labelledby="summary-head">
+        <h2 id="summary-head">Summary</h2>
+        <dl>
+          <div><dt>Items</dt><dd id="cart-items">0</dd></div>
+          <div class="summary__total"><dt>Total</dt><dd id="cart-total" aria-live="polite">$0</dd></div>
+        </dl>
+        <button class="btn btn--primary" type="button" data-checkout aria-describedby="checkout-status">Check out</button>
+        <p class="item__status" id="checkout-status" role="status"></p>
+        <a class="summary__back" href="index.html#shop">Keep shopping</a>
+      </section>
+    </div>
+
+    <template id="cart-line">
+      <li class="line">
+        <div class="line__info">
+          <p class="line__name" data-name></p>
+          <p class="line__each" data-each></p>
+          <button class="line__remove" type="button" data-act="remove" data-label="Remove">Remove</button>
+        </div>
+        <div class="qty">
+          <button type="button" data-act="dec" data-label="One fewer">−</button>
+          <output data-qty></output>
+          <button type="button" data-act="inc" data-label="One more">+</button>
+        </div>
+        <p class="line__sum" data-sum></p>
+      </li>
+    </template>
+  </div>
+</main>
+
+<footer class="foot">
+  <div class="container">
+    <p class="foot__statement">Knot the end guys… more creations are on the way.</p>
+    <ul class="foot__links">
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+      <li><a href="cookies.html">Cookies</a></li>
+      <li><button type="button" data-consent-open>Cookie settings</button></li>
+      <li><a href="dmca.html">Copyright</a></li>
+      <li><a href="disclaimer.html">Disclaimer</a></li>
+      <li><a href="accessibility.html">Accessibility</a></li>
+    </ul>
+    <p class="foot__legal">© 2026 Knot Crochet Co.</p>
+  </div>
+</footer>
+
+<section class="consent diecut" id="consent" aria-label="Cookie choice" hidden>
+  <p>This site saves your cookie choice and your cart in your browser, and nothing else. Optional extras, like visitor counts, stay off unless you say yes.</p>
+  <div class="consent__actions">
+    <button class="btn" type="button" data-consent-accept>Accept optional</button>
+    <button class="btn" type="button" data-consent-reject>Reject optional</button>
+    <button class="btn" type="button" data-consent-open>Manage preferences</button>
+  </div>
+</section>
+
+<dialog class="prefs diecut" id="prefs" aria-labelledby="prefs-head">
+  <h2 id="prefs-head">Cookie settings</h2>
+  <fieldset>
+    <legend class="visually-hidden">Storage categories</legend>
+    <label><input type="checkbox" checked disabled><span>Essential<small>Remembers this choice and your cart. Always on.</small></span></label>
+    <label><input type="checkbox" id="prefs-analytics"><span>Optional<small>Visitor counts and similar extras. None are in use today.</small></span></label>
+  </fieldset>
+  <div class="consent__actions">
+    <button class="btn" type="button" id="prefs-save">Save choices</button>
+    <button class="btn" type="button" data-consent-reject>Reject optional</button>
+  </div>
+</dialog>
+
+<script type="module" src="site.js"></script>
+</body>
+</html>

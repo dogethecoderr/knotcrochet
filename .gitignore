@@ -1,0 +1,4 @@
+.DS_Store
+# local tool files
+.claude/
+.hallmark/
