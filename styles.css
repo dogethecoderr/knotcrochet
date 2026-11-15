@@ -40,10 +40,12 @@ h1 { font-size: clamp(2.75rem, 5.2vw, 5.25rem); }
 
 /* ---------- hero ---------- */
 .hero { display: grid; align-items: center; min-height: calc(100dvh - var(--nav-h)); padding-block: var(--space-2xl); }
-.hero__grid { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: var(--space-3xl); align-items: center; }
-.hero .lead { margin-top: var(--space-lg); }
+.hero__grid { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: var(--space-3xl); align-items: start; }
+/* sized so the framed headline block is as tall as the square photo beside it, tops level */
+.hero h1 { max-width: 6.5em; font-size: clamp(2.75rem, 10vw - 4rem, 5rem); }
+.hero .lead { margin-top: var(--space-lg); font-size: clamp(1.25rem, 0.5vw + 1.1rem, 1.625rem); }
 /* a crochet hook draws a looped, wavy line of chain stitches out of a yarn ball, once around the headline (site.js) */
-.hero__words { position: relative; display: inline-block; margin-left: calc(-1 * var(--space-xl)); padding: var(--space-2xl); }
+.hero__words { position: relative; display: inline-block; margin: -0.625rem 0 0 calc(-1 * var(--space-xl)); padding: var(--space-2xl); }
 .yarn { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; }
 .yarn > path { fill: none; stroke: var(--color-accent); stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 13 9; vector-effect: non-scaling-stroke; }
 .yarn__ball circle { fill: var(--color-accent); }
@@ -189,7 +191,8 @@ h1 { font-size: clamp(2.75rem, 5.2vw, 5.25rem); }
   .hero { min-height: 0; }
   .hero__grid, .about__grid, .event { grid-template-columns: minmax(0, 1fr); gap: var(--space-xl); }
   .hero__visual { max-width: 30rem; }
-  .hero__words { margin-left: 0; padding: var(--space-xl); }
+  .hero__words { margin: 0; padding: var(--space-xl); }
+  .hero h1 { max-width: 20ch; font-size: var(--text-display); }
   .about__photo { justify-self: start; }
   .gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-inline: 0; }
   .cartpage__grid { grid-template-columns: minmax(0, 1fr); gap: var(--space-xl); }
